@@ -175,15 +175,3 @@ CSV generation:
 ./make_csv.sh llm
 Plot generation:
 python3 plot.py
-
-Conclusion
-
-Both platforms demonstrate strong horizontal scalability typical of serverless containers. Differences primarily arise from instance lifecycle behavior and cold start dynamics.
-
-Technologies Used: 
-FastAPI
-Docker
-Google Cloud Run
-Azure Container Apps
-k6
-Python (matplotlib)
