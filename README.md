@@ -180,14 +180,32 @@ python3 plot.py
 
 ## Conclusion
 
-Both platforms demonstrate strong horizontal scalability typical of serverless containers. Differences primarily arise from instance lifecycle behavior and cold start dynamics.
+Both Google Cloud Run and Azure Container Apps demonstrate strong horizontal scalability consistent with serverless container platforms. 
 
----
+The benchmark results indicate that throughput scales nearly linearly with increasing request rates, while latency degradation primarily appears under high load conditions. 
 
-## Technologies Used: 
-FastAPI
-Docker
-Google Cloud Run
-Azure Container Apps
-k6
-Python (matplotlib)
+Azure exhibits noticeable cold start latency at very low request rates, whereas GCP shows smoother initial response behavior. Once instances are active, both platforms deliver comparable performance characteristics.
+
+Overall, the observed differences are attributable to instance lifecycle management and autoscaling dynamics rather than fundamental platform limitations.
+
+## Technologies Used
+
+**Backend**
+
+- FastAPI
+- Python
+
+**Cloud Platforms**
+
+- Google Cloud Run
+- Azure Container Apps
+
+**Benchmarking**
+
+- k6
+- Python (matplotlib)
+
+**Containerization**
+
+- Docker
+
