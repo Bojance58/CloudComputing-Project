@@ -110,8 +110,9 @@ CSV generation:
 Plot generation:
 
 python3 plot.py
+---
 
-Conclusion
+## Conclusion
 
 Both Google Cloud Run and Azure Container Apps demonstrate strong horizontal scalability consistent with serverless container platforms.
 
@@ -121,26 +122,25 @@ Azure exhibits noticeable cold start latency at very low request rates, whereas 
 
 Overall, the observed differences are attributable to instance lifecycle management and autoscaling dynamics rather than fundamental platform limitations.
 
-Technologies Used
+---
 
-Backend
+## Technologies Used
 
-FastAPI
+### Backend
+- FastAPI
+- Python
 
-Python
+### Cloud Platforms
+- Google Cloud Run
+- Azure Container Apps
 
-Cloud Platforms
+### Benchmarking
+- k6
+- Python (matplotlib)
 
-Google Cloud Run
+### Containerization
+- Docker
 
-Azure Container Apps
 
-Benchmarking
-
-k6
-
-Python (matplotlib)
-
-Containerization
 
 Docker
